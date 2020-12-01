@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submit Button.</title>
+        <body>
+            <form>
+                <label>NAME</label>
+                <input type="text" id="fname">
+                <label>LASTNAME</label>
+                <input type="text" id="lname">
+                <label>email</label>
+                <input type="email" id="email">
+          </form>
+          
+        <button onclick="displaydata()">Dispaly Info</button>
+        <table style="border: solid;">
+            <p id="displayfname"></p>
+            <p id="displaylname"></p>
+            <p id="displayemail"></p>
+            <script>
+                function displaydata(){
+                    var fname=document.getElementById("fname").value
+                    var lname=document.getElementById("lname").value 
+                    var email=document.getElementById("useremail").value 
+               
+                    document.getElementById("displayfname").innerHTML="FirstName :"+fname
+                    document.getElementById("displaylname").innerHTML="LastName :"+lname
+                    document.getElementById("displayemail").innerHTML="email:"+email
+                   
+                  
+                }                        
+            </script>
+            </body>
+    </html>
+
+          
+        </body>
+    </head>
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title> HTML INPUT TYPE.</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+            <legend>fORM</legend>
+        <label>FirstName :</label>
+        <input type="text" id="fname"><br><br>
+        <label>LASTNAME :</label>
+        <input type="text" id="lname"><br><br>
+        <label>Email :</label>
+        <input type="email" id="useremail"><br><br>
+        <label>Password :</label>
+        <input type="password" id="userpass"><br><br>
+        <label>Number :</label>
+        <input type="tel" id="usernumber"><br><br>
+        <label>Date :</label>
+        <input type="date" id="userdate"><br><br>
+        <label>Search Websit :</label>
+        <input type="search" id="usersearch"><br><br>
+        <label for="mycolor">Choose Color</label>
+        <input type="color" id="usercolor"><br><br>
+       <label>GENDER:-..............</label><br><br>
+       <label class="GEN1"> MALE:-<input type="radio" name="gender">
+            FEMALE:-<input type="radio" name="gender">
+                OTHER:-<input type="radio" name="gender"></label><br><br>
+            </fieldset>
+            </form>
+        
+
+        <button onclick="displaydata()">Dispaly Info</button>
+        <table style="border: solid;">
+
+        <p id="displayFname" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayLname" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayuseremail" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayuserpass" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayusernumber" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayuserdate" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayuserSearch" style="color: royalblue; font-size: 30px;"></p>
+        <p id="displayusercolorcode" style="color: royalblue; font-size: 30px;"></p>
+    </table>
+        
+        <script>
+            function displaydata(){
+                var fname=document.getElementById("fname").value
+                var lname=document.getElementById("lname").value 
+                var email=document.getElementById("useremail").value 
+                var pass=document.getElementById("userpass").value
+                var number=document.getElementById("usernumber").value
+                var date=document.getElementById("userdate").value
+                var search=document.getElementById("usersearch").value
+                var colorcode=document.getElementById("usercolor").value
+               
+           
+                document.getElementById("displayFname").innerHTML="FirstName :"+fname
+                document.getElementById("displayLname").innerHTML="LastName :"+lname
+                document.getElementById("displayuseremail").innerHTML="email:"+email
+                document.getElementById("displayuserpass").innerHTML="password:"+pass
+                document.getElementById("displayuserdate").innerHTML="date:"+date
+                document.getElementById("displayuserSearch").innerHTML="search:"+search
+                document.getElementById("displayusercolorcode").innerHTML="color:"+colorcode
+              
+            }                        
+        </script>
+        </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML5 INPUT TYPES.</title>
+    </head>
+    <body>
+        <form>
+            <label for="mycolor">Choose Color</label>
+            <input type="color" id="cid">
+            <button type="button" onclick="showcolorcode()">Show Code</button>
+
+            <label for="mydate">Show Date</label>
+            <input type="date" id="d2">
+            <button type="button" onclick="showselectdate()">Show Date</button>
+        </form>
+        <script>
+            function showcolorcode(){
+                var colorcode=document.getElementById("cid").value
+                alert(colorcode)
+            }
+            function showselectdate(){
+                var Showdate=document.getElementById("cid").value
+                alert(date)
+            }
+        </script>
+    </body>
+</html>
